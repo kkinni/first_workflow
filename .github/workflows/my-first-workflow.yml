@@ -23,4 +23,4 @@ jobs:
       uses: actions/setup-python@v4
 
     - name: Print a message
-      run: echo "Hello, world!"
+      run: echo "Hello, world! Will this work from a push?"
