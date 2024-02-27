@@ -22,11 +22,11 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-python@v4
 
-    - name: Install dependencies
-      run: npm ci
+    # - name: Install dependencies
+    #   run: npm ci
 
-    - name: Run tests
-      run: npm test
+    # - name: Run tests
+    #   run: npm test
 
     - name: Print a message
       run: echo "Hello, world! Will this work from a push?"

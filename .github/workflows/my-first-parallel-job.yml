@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Node.js 
-        uses: actions/setup-node@v3
+        uses: actions/setup-python@v4
         with:
           node-version: latest
 
@@ -45,13 +45,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Node.js 
-        uses: actions/setup-node@v3
+        uses: actions/setup-python@v4
         with:
           node-version: latest
 
       - name: Print a message for master branch
         if: github.ref == 'refs/heads/master'
-        run: echo "This is the main branch."
+        run: echo "This is the master branch."
 
       - name: Print a message for non-master branches
         if: github.ref != 'refs/heads/master'
